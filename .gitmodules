@@ -1,4 +1,4 @@
 [submodule "KernelSU"]
 	path = KernelSU
 	url = https://github.com/luyanci/KernelSU
-	branch = susfs-v1.5.5
+	branch = susfs-v1.5.7
