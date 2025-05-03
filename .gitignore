@@ -142,3 +142,10 @@ scripts/ufdt/
 out
 gcc
 gcc32
+
+
+#
+# SukiSU
+#
+
+patch_linux
