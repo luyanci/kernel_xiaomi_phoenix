@@ -20,10 +20,10 @@ if ! [ -f "patch_linux" ]; then
         check-exec jq
         check-exec curl
         
-        TAG=$(jq -r 'map(select(.prerelease)) | first | .tag_name' <<< $(curl --silent https://api.github.com/repos/ShirkNeko/SukiSU_KernelPatch_patch/releases))
+        TAG=$(jq -r 'map(select(.prerelease)) | first | .tag_name' <<< $(curl --silent https://api.github.com/repos/SukiSU-Ultra/SukiSU_KernelPatch_patch/releases))
         echo "latest tag is: $TAG"
     
-        curl -Ls -o "$SELF_DIR/patch_linux" "https://github.com/ShirkNeko/SukiSU_KernelPatch_patch/releases/download/$TAG/patch_linux"
+        curl -Ls -o "$SELF_DIR/patch_linux" "https://github.com/SukiSU-Ultra/SukiSU_KernelPatch_patch/releases/download/$TAG/patch_linux"
     
         if [ $? -eq 0 ]; then
             echo "download ok"
